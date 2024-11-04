@@ -1,4 +1,4 @@
-function fetchUsers() {
+const fetchUsers = () => {
   fetch('https://randomuser.me/api/?results=5')
     .then(response => {
       if (!response.ok) {
@@ -14,7 +14,7 @@ function fetchUsers() {
     });
 }
 
-function displayUsers(users) {
+const displayUsers = (users) => {
   const userContainer = document.getElementById('user-container');
   userContainer.innerHTML = '';
 
